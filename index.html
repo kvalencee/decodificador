@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="Logo.png" alt="Logo" class="logo"> 
+            <textarea id="inputTexto" placeholder="Introduce tu texto aquí..."></textarea>
+            <p class="warning">
+                <img src="Warning.png" alt="warning" class="warning__imagen"> 
+                * Solo usar minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div id="outputContainer">
+                <img src="Muñeco.png" alt="Placeholder" id="placeholderImage"> 
+                <p id="placeholderText">Aún no has ingresado un texto para encriptar</p>
+                <textarea id="outputTexto" readonly style="display: none;"></textarea>
+            </div>
+            <button onclick="copiarTexto()" id="copyButton" style="display: none;">Copiar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por: KVA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
